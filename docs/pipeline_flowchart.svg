@@ -1,0 +1,51 @@
+<svg width="100%" viewBox="0 0 680 600" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Alt-text generation pipeline flowchart</title>
+<desc>Five-stage pipeline: environment setup, model loading, image input, alt-text generation, and evaluation and testing.</desc>
+<defs>
+<style>
+  text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  .th { font-size: 14px; font-weight: 600; fill: #1f2937; }
+  .ts { font-size: 12px; fill: #4b5563; }
+  .c-gray rect { fill: #f3f4f6; stroke: #9ca3af; }
+  .c-teal rect { fill: #e6fffa; stroke: #0d9488; }
+  .arr { stroke: #374151; stroke-width: 1.5; }
+</style>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+  <path d="M2 1L8 5L2 9" fill="none" stroke="#374151" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+
+<g class="c-gray">
+<rect x="190" y="40" width="300" height="56" rx="8" stroke-width="0.5"/>
+<text class="th" x="340" y="58" text-anchor="middle">Environment setup</text>
+<text class="ts" x="340" y="76" text-anchor="middle">Docker or Terminal, isolated</text>
+</g>
+<line x1="340" y1="96" x2="340" y2="156" class="arr" marker-end="url(#arrow)"/>
+
+<g class="c-gray">
+<rect x="190" y="156" width="300" height="56" rx="8" stroke-width="0.5"/>
+<text class="th" x="340" y="174" text-anchor="middle">Model loading</text>
+<text class="ts" x="340" y="192" text-anchor="middle">Vision-language model via MLX</text>
+</g>
+<line x1="340" y1="212" x2="340" y2="272" class="arr" marker-end="url(#arrow)"/>
+
+<g class="c-teal">
+<rect x="190" y="272" width="300" height="56" rx="8" stroke-width="0.5"/>
+<text class="th" x="340" y="290" text-anchor="middle">Image input</text>
+<text class="ts" x="340" y="308" text-anchor="middle">Screenshot or photo file</text>
+</g>
+<line x1="340" y1="328" x2="340" y2="388" class="arr" marker-end="url(#arrow)"/>
+
+<g class="c-teal">
+<rect x="190" y="388" width="300" height="56" rx="8" stroke-width="0.5"/>
+<text class="th" x="340" y="406" text-anchor="middle">Alt-text generation</text>
+<text class="ts" x="340" y="424" text-anchor="middle">Model produces a description</text>
+</g>
+<line x1="340" y1="444" x2="340" y2="504" class="arr" marker-end="url(#arrow)"/>
+
+<g class="c-teal">
+<rect x="190" y="504" width="300" height="56" rx="8" stroke-width="0.5"/>
+<text class="th" x="340" y="522" text-anchor="middle">Evaluation and testing</text>
+<text class="ts" x="340" y="540" text-anchor="middle">Review output quality</text>
+</g>
+</svg>
