@@ -5,10 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Alt Text Generator</title>
 	<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+	<link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
 </head>
 <body>
 	<div class="container">
-		<h1>Alt-Text Genarator</h1>
+		<h1>Alt-Text Generator</h1>
 		<p>Upload an image to generate  alt-text for screen readers.</p>
 
 		<form action="/upload" method="POST" enctype="multipart/form-data">
