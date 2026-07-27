@@ -16,6 +16,16 @@ The one-time setup phase (environment + model loading) happens once; the runtime
 
 This is intentionally a working sketch, not a finalized diagram — it will be revised as the project evolves. Key design decision: the vision-language model runs **natively** on macOS (not inside Docker), since Linux VMs on Apple Silicon currently have no GPU/Metal passthrough — containerizing the model would force CPU-only inference and lose the point of using MLX. Docker is used instead to isolate the web UI and testing tools, which don't need GPU access.
 
+##Product Samples
+
+The upload/landing page:
+
+![ss1](docs/screenshots/ss1.png)
+
+A generated response, showing both the plain and creative alt-text variants:
+
+![ss2](docs/screemshots/ss2.png)
+
 ## Status
 
 - [x] Environment setup — Homebrew, Colima, Docker
