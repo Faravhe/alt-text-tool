@@ -21,11 +21,10 @@ This is intentionally a working sketch, not a finalized diagram — it will be r
 The upload/landing page:
 
 ![ss1](docs/screenshots/ss1.png)
-![ss2](docs/screenshots/ss2.png)
 
 A generated response, showing both the plain and creative alt-text variants:
 
-![ss2](docs/screemshots/ss2.png)
+![ss2](docs/screenshots/ss2.png)
 
 ## Status: Under Construction (Beta)
 
