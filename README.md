@@ -21,18 +21,34 @@ This is intentionally a working sketch, not a finalized diagram — it will be r
 The upload/landing page:
 
 ![ss1](docs/screenshots/ss1.png)
+![ss2](docs/screenshots/ss2.png)
 
 A generated response, showing both the plain and creative alt-text variants:
 
 ![ss2](docs/screemshots/ss2.png)
 
-## Status
+## Status: Under Construction (Beta)
+
+This project is actively being developed, with several features still planned. It is not yet publicly deployed with a permanent URL.
+
+### Requesting Beta Access
+
+While this project is in early development, live access is granted manually:
+
+1. Email [tauhidul.islam0101@gmail.com](mailto:tauhidul.islam0101@gmail.com) requesting access.
+2. A temporary Cloudflare Tunnel will be started on request, and the live URL will be sent back via email.
+3. Since this uses Cloudflare's free quick-tunnel feature, the URL is temporary and will change between sessions — it is not meant to be bookmarked long-term.
+
+A permanent domain and persistent hosting are planned for a future release.
+
+## Progress 
 
 - [x] Environment setup — Homebrew, Colima, Docker
 - [x] Model loading — `Qwen2-VL-7B-Instruct-4bit` via MLX, running natively
 - [x] Image preprocessing — automatic resize + baseline JPEG conversion (fixes silent failures on large/progressive JPEGs)
 - [x] Web UI — Flask app, containerized, hand-built (not a framework like Gradio) for learning purposes
-- [ ] Connecting the containerized web UI to the native model server
+- [x] Connecting the containerized web UI to the native model server
+- [ ] Persistent domain + Cloudflare Access authentication
 - [ ] Ongoing evaluation — accuracy testing across varied image types
 
 ## Known limitations
